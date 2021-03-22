@@ -18,8 +18,8 @@ function Application(){
                 <Route exact path = '/HashGenerator' component={HGApp}/>
                 <Route exact path = '/RHConverter' component={JVApp}/>
                 <Route exact path = '/TConverter' component={NBCApp}/>
-                <Route exact path = '/UConverter' component={RHCApp}/>
-                <Route exact path = '/NBConverter' component={SUApp}/>
+                <Route exact path = '/UConverter' component={UCApp}/>
+                <Route exact path = '/NBConverter' component={NBCApp}/>
                 <Route exact path = '/SUtilities' component={TCApp}/>
                 <Route exact path = '/JValidator' component={UCApp}/>
             </Switch>
