@@ -62,3 +62,10 @@ header{
 .home-button:focus{
   outline: 0;
 }
+
+@media (max-width:640px){
+  .home-container{
+    justify-content:center;
+  }
+  
+}
