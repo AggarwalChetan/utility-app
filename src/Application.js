@@ -16,12 +16,12 @@ function Application(){
                 <Route exact path = '/' component={App}/>
                 <Route exact path = '/EDecoder' component={EDApp}/>
                 <Route exact path = '/HashGenerator' component={HGApp}/>
-                <Route exact path = '/RHConverter' component={JVApp}/>
-                <Route exact path = '/TConverter' component={NBCApp}/>
+                <Route exact path = '/RHConverter' component={RHCApp}/>
+                <Route exact path = '/TConverter' component={TCApp}/>
                 <Route exact path = '/UConverter' component={UCApp}/>
                 <Route exact path = '/NBConverter' component={NBCApp}/>
-                <Route exact path = '/SUtilities' component={TCApp}/>
-                <Route exact path = '/JValidator' component={UCApp}/>
+                <Route exact path = '/SUtilities' component={SUApp}/>
+                <Route exact path = '/JValidator' component={JVApp}/>
             </Switch>
         </Router>
     )
