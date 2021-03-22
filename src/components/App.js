@@ -20,14 +20,14 @@ class App extends React.Component{
         </header>
 
         <div className="home-container">
-          <Utility app="Encoders / Decoders"/>
-          <Utility app="Hash Generators"/>
-          <Utility app="RGB / HEX Converters"/>
-          <Utility app="Timestamp Converters"/>
-          <Utility app="Unit Converters"/>
-          <Utility app="Number Base Converters"/>
-          <Utility app="String Utilities"/>
-          <Utility app="JSON Validator"/>
+          <Utility utilityApp = "EDecoder" app="Encoders / Decoders"/>
+          <Utility utilityApp = "HashGenerator" app="Hash Generators"/>
+          <Utility utilityApp = "RHConverter" app="RGB / HEX Converters"/>
+          <Utility utilityApp = "TConverter" app="Timestamp Converters"/>
+          <Utility utilityApp = "UConverter" app="Unit Converters"/>
+          <Utility utilityApp = "NBConverter" app="Number Base Converters"/>
+          <Utility utilityApp = "SUtilities" app="String Utilities"/>
+          <Utility utilityApp = "JValidator" app="JSON Validator"/>
         </div>
       </>
     )

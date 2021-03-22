@@ -5,10 +5,14 @@ class Utility extends React.Component{
         super(props);
     }
 
+    utilityApp = () => {
+        window.location = `/${this.props.utilityApp}`
+    }
+
     render(){
         return(
             <div className="Utility-app">
-                <div className="Utiliy-content">{this.props.app}</div>
+                <div onClick={this.utilityApp} className="Utiliy-content">{this.props.app}</div>
             </div>
         )
     }
