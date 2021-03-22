@@ -25,9 +25,6 @@ class EDApp extends React.Component{
                             <li>URL encoding stands for encoding certain characters in a URL by replacing them with one or more 
                                 character triplets that consist of the percent character "%" followed by two hexadecimal digits. 
                                 The two hexadecimal digits of the triplet(s) represent the numeric value of the replaced character.</li>
-                            <li>The term URL encoding is a bit inexact because the encoding procedure is not limited to URLs (Uniform Resource Locators),
-                                 but can also be applied to any other URIs (Uniform Resource Identifiers) such as URNs (Uniform Resource Names). 
-                                Therefore, the term percent-encoding should be preferred.</li>
                     </div>
                 </div>
 
