@@ -11,8 +11,8 @@ class Utility extends React.Component{
 
     render(){
         return(
-            <div className="Utility-app">
-                <div onClick={this.utilityApp} className="Utiliy-content">{this.props.app}</div>
+            <div onClick={this.utilityApp} className="Utility-app">
+                <div className="Utiliy-content">{this.props.app}</div>
             </div>
         )
     }
