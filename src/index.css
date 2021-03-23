@@ -201,6 +201,8 @@ header{
   letter-spacing: 1px;
   margin-bottom: 60px;
   margin-top: 40px;
+  font-weight:500;
+  align-items: center;
 }
 
 .drop-down:focus{
