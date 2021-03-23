@@ -1,51 +1,44 @@
 import React from 'react';
+import Modal from 'react-modal';
+import AreaModal from './AreaModal';
+import LengthModal from './LengthModal';
+import PressureModal from './PressureModal';
+import RotationModal from './RotationModal';
+import SpeedModal from './SpeedModal';
+import TemperatureModal from './TemperatureModal';
+import VolumeModal from './VolumeModal';
+import WeightModal from './WeightModal';
 
-class UCApp extends React.Component{
-    constructor(props){
+class UCApp extends React.Component {
+    constructor(props) {
         super(props);
     }
 
     homePage = () => {
-        window.location='/';
+        window.location = '/';
     }
 
-    render(){
+    render() {
         return (
             <>
-            <header>
-                <button className="home-button" onClick={this.homePage}>Home</button>
-            </header>
+                <header>
+                    <button className="home-button" onClick={this.homePage}>Home</button>
+                </header>
 
-            <div className="home-container">
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Length Converter</div>
+                <div className="home-container">
+                    <LengthModal/>
+                    <AreaModal/>
+                    <VolumeModal/>
+                    <WeightModal/>
+                    <SpeedModal/>
+                    <RotationModal/>
+                    <TemperatureModal/>
+                    <PressureModal/>
                 </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Area<br/> Converter</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Volume Converter</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Weight Converter</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Speed Converter</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Rotation Converter</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Temperature Converter</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Pressure Converter</div>
-                </div>
-            </div>
 
             </>
         )
     }
 }
 
-export default UCApp; 
+export default UCApp;
