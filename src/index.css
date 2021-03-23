@@ -135,7 +135,7 @@ header{
   min-height: 600px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items:center;
   justify-content: space-evenly;
   background-color: #373b69;
 }
@@ -154,18 +154,22 @@ header{
 
 
 .closebutton {
-  width: 50%;
-  max-width: 25px;
-  align-items: center;
+  width: 100%;
+  max-width: 30px;
+  /* align-items: center;
+  text-align:right */
+
+  /* max-width: 400px;
+  align-items: flex-end;
   display: flex;
   border: 3px solid #4756fc;
   text-decoration: none;
   color: white;
   background-color: #4756fc;
-  text-align: center;
+  text-align:end;
   cursor: pointer;
   font: bolder;
-  margin-bottom: 60px;
+  margin-bottom: 60px; */
 }
 
 .closebutton:focus {
@@ -176,6 +180,33 @@ header{
   color: red;
 }
 
+.drop-down-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.drop-down{
+  width: 33%;
+  outline: none;
+  font-size: 19px;
+  padding: 6px;
+  padding-right: 0;
+  background: black;
+  color: black;
+  text-align: center;
+  background-color: #373b69;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.drop-down:focus{
+  outline: 0;
+}
+
+.drop-down-container option{
+  font-size: 19px;
+  text-align: center;
+}
 
 
 @media (max-width:640px){
@@ -196,4 +227,13 @@ header{
     min-height: 450px;
   }
   
+  .drop-down{
+    width: 40%;
+    font-size: 9px;
+  }
+
+  .drop-down-container option{
+    font-size: 9px;
+  }
+
 }

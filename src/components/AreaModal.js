@@ -22,8 +22,28 @@ class AreaModal extends React.Component {
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
                         <button className="closebutton" onClick={this.handleModalClose}>X</button>
-                        <input text="number" placeholder="From..."></input>
-                        <input text="number" placeholder="To..."></input>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="From..."></input>
+                            <select className="drop-down">
+                                <option>m^2</option>
+                                <option>km^2</option>
+                                <option>cm^2</option>
+                                <option>mm^2</option>
+                                <option>µm^2</option>
+                                <option>ha</option>
+                            </select>
+                        </div>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="To..."></input>
+                            <select className="drop-down">
+                                <option>m^2</option>
+                                <option>km^2</option>
+                                <option>cm^2</option>
+                                <option>mm^2</option>
+                                <option>µm^2</option>
+                                <option>ha</option>
+                            </select>
+                        </div>
                     </div>
                 </Modal>
             </div>

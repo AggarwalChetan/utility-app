@@ -22,8 +22,28 @@ class PressureModal extends React.Component {
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
                         <button className="closebutton" onClick={this.handleModalClose}>X</button>
-                        <input text="number" placeholder="From..."></input>
-                        <input text="number" placeholder="To..."></input>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="From..."></input>
+                            <select className="drop-down">
+                                <option>Pa</option>
+                                <option>kPa</option>
+                                <option>bar</option>
+                                <option>psi</option>
+                                <option>ksi</option>
+                                <option>atm</option>
+                            </select>
+                        </div>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="To..."></input>
+                            <select className="drop-down">
+                                <option>Pa</option>
+                                <option>kPa</option>
+                                <option>bar</option>
+                                <option>psi</option>
+                                <option>ksi</option>
+                                <option>atm</option>
+                            </select>
+                        </div>
                     </div>
                 </Modal>
             </div>

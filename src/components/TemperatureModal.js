@@ -22,8 +22,22 @@ class TemperatureModal extends React.Component {
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
                         <button className="closebutton" onClick={this.handleModalClose}>X</button>
-                        <input text="number" placeholder="From..."></input>
-                        <input text="number" placeholder="To..."></input>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="From..."></input>
+                            <select className="drop-down">
+                                <option>k</option>
+                                <option>c</option>
+                                <option>f</option>
+                            </select>
+                        </div>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="To..."></input>
+                            <select className="drop-down">
+                                <option>k</option>
+                                <option>c</option>
+                                <option>f</option>
+                            </select>
+                        </div>
                     </div>
                 </Modal>
             </div>

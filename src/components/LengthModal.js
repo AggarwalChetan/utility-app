@@ -22,8 +22,30 @@ class LengthModal extends React.Component {
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
                         <button className="closebutton" onClick={this.handleModalClose}>X</button>
-                        <input text="number" placeholder="From..."></input>
-                        <input text="number" placeholder="To..."></input>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="From..."></input>
+                            <select className="drop-down">
+                                <option>m</option>
+                                <option>km</option>
+                                <option>dm</option>
+                                <option>cm</option>
+                                <option>mm</option>
+                                <option>µm</option>
+                                <option>nm</option>
+                            </select>
+                        </div>
+                        <div className="drop-down-container">
+                            <input text="number" placeholder="To..."></input>
+                            <select className="drop-down">
+                                <option>m</option>
+                                <option>km</option>
+                                <option>dm</option>
+                                <option>cm</option>
+                                <option>mm</option>
+                                <option>µm</option>
+                                <option>nm</option>
+                            </select>
+                        </div>
                     </div>
                 </Modal>
             </div>
