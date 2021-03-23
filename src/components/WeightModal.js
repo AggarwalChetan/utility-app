@@ -21,7 +21,6 @@ class WeightModal extends React.Component {
                 <div onClick={this.handleModalOpen} className="Utiliy-content">Weight Converter</div>
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
-                        <button className="closebutton" onClick={this.handleModalClose}>X</button>
                         <div className="drop-down-container">
                             <input text="number" placeholder="From..."></input>
                             <select className="drop-down">
@@ -41,6 +40,9 @@ class WeightModal extends React.Component {
                                 <option>t</option>
                                 <option>lbs</option>
                             </select>
+                        </div>
+                        <div className="button-container">
+                            <button className="closebutton" onClick={this.handleModalClose}>Close</button>
                         </div>
                     </div>
                 </Modal>

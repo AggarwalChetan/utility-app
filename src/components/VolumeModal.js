@@ -21,7 +21,6 @@ class VolumeModal extends React.Component {
                 <div onClick={this.handleModalOpen} className="Utiliy-content">Volume Converter</div>
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
-                        <button className="closebutton" onClick={this.handleModalClose}>X</button>
                         <div className="drop-down-container">
                             <input text="number" placeholder="From..."></input>
                             <select className="drop-down">
@@ -39,6 +38,9 @@ class VolumeModal extends React.Component {
                                 <option>cm^3</option>
                                 <option>mm^3</option>
                             </select>
+                        </div>
+                        <div className="button-container">
+                            <button className="closebutton" onClick={this.handleModalClose}>Close</button>
                         </div>
                     </div>
                 </Modal>

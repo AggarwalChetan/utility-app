@@ -149,27 +149,30 @@ header{
   background: rgba(255, 255, 255, 0.1);
   color: white;
   letter-spacing: 1px;
+  margin-top: 40px;
   margin-bottom: 60px;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
 .closebutton {
   width: 100%;
-  max-width: 30px;
-  /* align-items: center;
-  text-align:right */
-
-  /* max-width: 400px;
-  align-items: flex-end;
-  display: flex;
-  border: 3px solid #4756fc;
-  text-decoration: none;
-  color: white;
-  background-color: #4756fc;
-  text-align:end;
+  border: none;
+  outline: none;
+  font-size: 27px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 30px;
+  background-color: #373b69;
+  color: #12142c;
+  letter-spacing: 1px;
   cursor: pointer;
-  font: bolder;
-  margin-bottom: 60px; */
+  font-weight: bolder;
 }
 
 .closebutton:focus {
@@ -177,7 +180,7 @@ header{
 }
 
 .closebutton:hover {
-  color: red;
+  color: white;
 }
 
 .drop-down-container{
@@ -197,6 +200,7 @@ header{
   background-color: #373b69;
   letter-spacing: 1px;
   margin-bottom: 60px;
+  margin-top: 40px;
 }
 
 .drop-down:focus{
@@ -229,11 +233,11 @@ header{
   
   .drop-down{
     width: 40%;
-    font-size: 9px;
+    font-size: 9.5px;
   }
 
-  .drop-down-container option{
-    font-size: 9px;
+  .closebutton {
+    font-size: 22px;
   }
 
 }
