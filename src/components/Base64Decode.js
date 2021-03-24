@@ -15,7 +15,6 @@ class Base64Decode extends React.Component {
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
                 </header>
-                <div>
                     <div className="base64-decode">
                         <textarea placeholder="Enter the text you want to decode..."></textarea>
                         <div className="base64-decode-button-container">
@@ -23,7 +22,6 @@ class Base64Decode extends React.Component {
                             <button>Decode url</button>
                         </div>
                         <textarea placeholder="Your result will appear here..."></textarea>
-                    </div>
                 </div>
             </>
         )
