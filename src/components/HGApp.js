@@ -9,6 +9,22 @@ class HGApp extends React.Component {
         window.location = '/';
     }
 
+    redirectToMD5 = () => {
+        window.location = '/HashGenerator/MD5';
+    }
+
+    redirectToSHA1 = () => {
+        window.location = '/HashGenerator/SHA-1';
+    }
+
+    redirectToSHA512 = () => {
+        window.location = '/HashGenerator/SHA-512';
+    }
+
+    redirectToSHA256 = () => {
+        window.location = '/HashGenerator/SHA-256';
+    }
+
     render() {
         return (
             <>
@@ -17,7 +33,7 @@ class HGApp extends React.Component {
                 </header>
 
                 <div className="ED-UApp-container">
-                    <div className="UApp">
+                    <div onClick={this.redirectToMD5} className="UApp">
                         <div className="UApp-content">MD5</div>
                     </div>
                     <div className="UAppOverview">
@@ -27,7 +43,7 @@ class HGApp extends React.Component {
                         </div>
                     </div>
 
-                    <div className="UApp">
+                    <div onClick={this.redirectToSHA1} className="UApp">
                         <div className="UApp-content">SHA-1</div>
                     </div>
                     <div className="UAppOverview">
@@ -37,7 +53,8 @@ class HGApp extends React.Component {
                                 simply by knowing the hash value. SHA-1 was designed to be collision resistant, meaning that two inputs could not have the same hash value.</li>
                         </div>
                     </div>
-                    <div className="UApp">
+
+                    <div onClick={this.redirectToSHA256} className="UApp">
                         <div className="UApp-content">SHA-256</div>
                     </div>
                     <div className="UAppOverview">
@@ -46,7 +63,8 @@ class HGApp extends React.Component {
                                 SHA-256 is a patented cryptographic hash function that outputs a value that is 256 bits long.</li>
                         </div>
                     </div>
-                    <div className="UApp">
+
+                    <div onClick={this.redirectToSHA512} className="UApp">
                         <div className="UApp-content">SHA-512</div>
                     </div>
                     <div className="UAppOverview">

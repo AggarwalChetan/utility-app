@@ -1,10 +1,9 @@
 import React from 'react';
 
-class EncoderDecoder extends React.Component {
+class MD5 extends React.Component {
     constructor(props) {
         super(props);
     }
-
 
     homePage = () => {
         window.location = '/';
@@ -29,4 +28,4 @@ class EncoderDecoder extends React.Component {
     }
 }
 
-export default EncoderDecoder;
+export default MD5;
