@@ -6,7 +6,19 @@ class EDApp extends React.Component{
     }
 
     homePage = () => {
-        window.location='/';
+        window.location = '/';
+    }
+
+    redirectEncodeDecode = () => {
+        window.location = '/EDecoder/UREncoderDecoder';
+    }
+
+    redirectBase64Encode = () => {
+        window.location = '/EDecoder/Base64Encode';
+    }
+
+    redirectBase64Decode = () => {
+        window.location = '/EDecoder/Base64Decode';
     }
 
     render(){
@@ -17,7 +29,7 @@ class EDApp extends React.Component{
             </header>
 
             <div className="ED-UApp-container">
-                <div className="UApp">
+                <div onClick={this.redirectEncodeDecode} className="UApp">
                     <div className="UApp-content">URL Encode / Decode</div>
                 </div>
                 <div className="UAppOverview">
@@ -28,7 +40,7 @@ class EDApp extends React.Component{
                     </div>
                 </div>
 
-                <div className="UApp">
+                <div onClick={this.redirectBase64Encode} className="UApp">
                     <div className="UApp-content">Base64 Encode</div>
                 </div>
                 <div className="UAppOverview">
@@ -38,7 +50,7 @@ class EDApp extends React.Component{
                             Radix-64 and YUI's Y64. Encoding data in Base64 results in it taking up roughly 33% more space than the original data.</li>
                     </div>
                 </div>
-                <div className="UApp">
+                <div onClick={this.redirectBase64Decode} className="UApp">
                     <div className="UApp-content">Base64 Decode</div>
                 </div>
                 <div className="UAppOverview">
