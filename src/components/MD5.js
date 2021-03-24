@@ -18,8 +18,8 @@ class MD5 extends React.Component {
                 <div className="base64-decode">
                     <textarea placeholder="Enter the text you want to decode..."></textarea>
                     <div className="base64-decode-button-container">
-                        <button>Encode url</button>
-                        <button>Decode url</button>
+                        <button>MD5</button>
+                        <button>Reset</button>
                     </div>
                     <textarea placeholder="Your result will appear here..."></textarea>
                 </div>

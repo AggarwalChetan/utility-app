@@ -1,6 +1,5 @@
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import App from './components/App';
-import Base64Decode from './components/Base64Decode';
 import Base64Encode from './components/Base64Encode';
 import EDApp from './components/EDApp';
 import EncoderDecoder from './components/EncoderDecoder';
@@ -23,7 +22,6 @@ function Application(){
                 <Route exact path = '/' component={App}/>
                 <Route exact path = '/EDecoder' component={EDApp}/>
                 <Route exact path = '/EDecoder/UREncoderDecoder' component = {EncoderDecoder}/>
-                <Route exact path = '/EDecoder/Base64Decode' component={Base64Decode}/>
                 <Route exact path = '/EDecoder/Base64Encode' component={Base64Encode}/>
                 <Route exact path = '/HashGenerator' component={HGApp}/>
                 <Route exact path = '/HashGenerator/MD5' component={MD5}/>

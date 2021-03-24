@@ -34,29 +34,22 @@ class EDApp extends React.Component{
                 </div>
                 <div className="UAppOverview">
                     <div className="UAppOverview-content">
-                            <li>URL encoding stands for encoding certain characters in a URL by replacing them with one or more 
-                                character triplets that consist of the percent character "%" followed by two hexadecimal digits. 
-                                The two hexadecimal digits of the triplet(s) represent the numeric value of the replaced character.</li>
+                            <li>URL encoding converts characters into a format that can be transmitted over the Internet.
+                                URLs can only be sent over the Internet using the ASCII character-set.  
+                                URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits.</li>
+                            <li>URL decoding reverses the encoding</li>
                     </div>
                 </div>
 
                 <div onClick={this.redirectBase64Encode} className="UApp">
-                    <div className="UApp-content">Base64 Encode</div>
+                    <div className="UApp-content">Base64 Encode / Decode</div>
                 </div>
                 <div className="UAppOverview">
                     <div className="UAppOverview-content">
-                        <li>The term Base 64 is generic, and there are many implementations. MIME, which stands for Multi-Purpose Internet Mail Extensions, is the most common 
-                            that is seen today. It is used to transmit attachments via email over the Simple Mail Transfer Protocol (SMTP). Other examples of Base64 encoding are 
-                            Radix-64 and YUI's Y64. Encoding data in Base64 results in it taking up roughly 33% more space than the original data.</li>
-                    </div>
-                </div>
-                <div onClick={this.redirectBase64Decode} className="UApp">
-                    <div className="UApp-content">Base64 Decode</div>
-                </div>
-                <div className="UAppOverview">
-                <div className="UAppOverview-content">
-                    <li>Base64 is a way of representing binary data in an ASCII string.
-                            ‘Base64 decoding’ is the process of transforming a base64 representation — a string of odd-looking text — back into the original binary or text data.</li>
+                        <li>Base 64 is one of the technique we use to encode the binary data into characters. 
+                            We don't send binary data directly over the network, because we never know some protocols may interpret and screwed up the data.</li>
+                        <li>Decoding reverses the encoding</li>
+
                     </div>
                 </div>
             </div>

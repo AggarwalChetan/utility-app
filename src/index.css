@@ -308,7 +308,7 @@ header{
   }
 
   .base64-decode-button-container{
-    margin-bottom: 1rem;
+    margin-bottom: -0.5rem;
   }
 
   .base64-decode-button-container button{

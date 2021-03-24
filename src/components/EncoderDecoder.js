@@ -20,6 +20,7 @@ class EncoderDecoder extends React.Component {
                     <textarea placeholder="Enter the text you want to decode..."></textarea>
                     <div className="base64-decode-button-container">
                         <button>Encode url</button>
+                        <button>Reset</button>
                         <button>Decode url</button>
                     </div>
                     <textarea placeholder="Your result will appear here..."></textarea>

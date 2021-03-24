@@ -38,8 +38,9 @@ class HGApp extends React.Component {
                     </div>
                     <div className="UAppOverview">
                         <div className="UAppOverview-content">
-                            <li>This MD5 hash generator is useful for encoding passwords, credit cards numbers and other sensitive date into MySQL, Postgress or other databases. 
-                                PHP programmers, ASP programmers and anyone developing on MySQL, SQL, Postgress or similar should find this online tool an especially handy resource.</li>
+                            <li>This MD5 hash generator is useful for encoding passwords, credit cards numbers and other sensitive date in MYSQL, or other databases.
+                                An MD5 hash is created by taking a string of any length and encoding it into a 128-bit fingerprint.</li>
+                            <li>MD5 hashes are also used to ensure the data integrity of files.</li>
                         </div>
                     </div>
 
@@ -48,9 +49,10 @@ class HGApp extends React.Component {
                     </div>
                     <div className="UAppOverview">
                         <div className="UAppOverview-content">
-                            <li>SHA-1 (Secure Hash Algorithm) is a 160 bit cryptographic hash function created by the NSA in 1995. 
-                                It creates a 40 byte hash value for the input of the algorithm. SHA-1 is one-way, meaning that the original input cannot be be determined 
-                                simply by knowing the hash value. SHA-1 was designed to be collision resistant, meaning that two inputs could not have the same hash value.</li>
+                            <li>SHA-1 is most often used to verify that a file has been unaltered. This is done by producing a checksum before the file
+                            has been transmitted, and then again once it reaches its destination.
+                            </li>
+                            <li>SHA-1 (Secure Hash Algorithm) is a 160 bit cryptographic hash function created by the NSA in 1995.</li>
                         </div>
                     </div>
 
@@ -59,7 +61,7 @@ class HGApp extends React.Component {
                     </div>
                     <div className="UAppOverview">
                         <div className="UAppOverview-content">
-                            <li>The SHA-256 algorithm is one flavor of SHA-2 (Secure Hash Algorithm 2), which was created by the National Security Agency in 2001 as a successor to SHA-1. 
+                            <li>The SHA-256 algorithm is one flavor of SHA-2 (Secure Hash Algorithm 2), which was created by the National Security Agency in 2001 as a successor to SHA-1.
                                 SHA-256 is a patented cryptographic hash function that outputs a value that is 256 bits long.</li>
                         </div>
                     </div>
@@ -69,8 +71,8 @@ class HGApp extends React.Component {
                     </div>
                     <div className="UAppOverview">
                         <div className="UAppOverview-content">
-                            <li>The SHA-256 algorithm is one flavor of SHA-2 (Secure Hash Algorithm 2), which was created by the National Security Agency in 2001 as a successor to SHA-1. 
-                                SHA-256 is a patented cryptographic hash function that outputs a value that is 256 bits long.</li>
+                            <li>The SHA-512 is a patented cryptographic hash function that outputs a value that is 512 bits long. 
+                                SHA-512 is much more secure than SHA-256 and take more time to crack.</li>
                         </div>
                     </div>
                 </div>
