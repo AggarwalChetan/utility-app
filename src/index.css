@@ -292,9 +292,23 @@ header{
     font-size: 22px;
   }
 
+  .base64-decode{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
   .base64-decode textarea{
     height: 250px;
     width: 250px;
+    margin-top: 0;
+  }
+
+  .base64-decode-button-container{
+    margin-bottom: 1rem;
+  }
+
+  .base64-decode-button-container button{
+    margin: 0;
   }
 
 }
