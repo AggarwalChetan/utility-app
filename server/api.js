@@ -63,7 +63,7 @@ router.post('/sha-512', (req, res) => {
 router.post('/json', (req, res) => {
 
     // converts object to string
-    const data = JSON.stringify(req.body, null, '\t');
+    const data = JSON.stringify(req.body, null, 3);
 
     // convert string back to object
     res.send(data);

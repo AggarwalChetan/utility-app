@@ -241,6 +241,33 @@ header{
   font-size: 20px;
 }
 
+.json{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.5rem;
+  height: 400px;
+  align-items: center;
+}
+
+.json textarea{
+  text-align: start;
+  height: 450px;
+  width: 450px;
+  letter-spacing: 1px;
+  /* margin-bottom: 1.5 rem; */
+  background-color: #373b69;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.json textarea:focus{
+  outline: 0;
+}
+
 .base64-decode textarea:focus{
   outline: 0;
 }
@@ -306,6 +333,18 @@ header{
     margin-top: 0;
   }
 
+  .json{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .json textarea{
+    height: 300px;
+    width: 300px;
+    margin-top: 0;
+  }
+
+
   .base64-decode-button-container{
     display: flex;
     flex-direction: column;
@@ -353,6 +392,17 @@ header{
   }
 
   .base64-decode textarea{
+    height: 220px;
+    width: 220px;
+    margin-top: 0;
+  }
+
+  .json{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .json textarea{
     height: 220px;
     width: 220px;
     margin-top: 0;
@@ -410,6 +460,18 @@ header{
     width: 250px;
     margin-top: 0;
   }
+
+  .json{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .json textarea{
+    height: 250px;
+    width: 250px;
+    margin-top: 0;
+  }
+
 
   .base64-decode-button-container{
     display: block;
