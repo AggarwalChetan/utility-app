@@ -233,7 +233,7 @@ header{
   height: 350px;
   width: 350px;
   letter-spacing: 1px;
-  /* margin-bottom: 1.5rem; */
+  /* margin-bottom: 1.5 rem; */
   background-color: #373b69;
   color: black;
   border: none;
@@ -268,8 +268,112 @@ header{
   border-radius: 5px;
 }
 
+@media only screen and (max-width:880px){
+  .home-container{
+    justify-content:center;
+  }
+  
+  .UApp-container{
+    justify-content: center;
+  }
 
-@media (max-width:640px){
+  .UAppOverview-content {
+    font-size: 13.5px;
+  }
+
+  .modal-container {
+    max-width: 400px;
+    min-height: 450px;
+  }
+  
+  .drop-down{
+    width: 40%;
+    font-size: 9.5px;
+  }
+
+  .closebutton {
+    font-size: 22px;
+  }
+
+  .base64-decode{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .base64-decode textarea{
+    height: 300px;
+    width: 300px;
+    margin-top: 0;
+  }
+
+  .base64-decode-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+    margin-bottom: -0.5rem;
+  }
+
+  .base64-decode-button-container button{
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width:780px){
+  .home-container{
+    justify-content:center;
+  }
+  
+  .UApp-container{
+    justify-content: center;
+  }
+
+  .UAppOverview-content {
+    font-size: 13.5px;
+  }
+
+  .modal-container {
+    max-width: 400px;
+    min-height: 450px;
+  }
+  
+  .drop-down{
+    width: 40%;
+    font-size: 9.5px;
+  }
+
+  .closebutton {
+    font-size: 22px;
+  }
+
+  .base64-decode{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .base64-decode textarea{
+    height: 220px;
+    width: 220px;
+    margin-top: 0;
+  }
+
+  .base64-decode-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+    margin-bottom: -0.5rem;
+  }
+
+  .base64-decode-button-container button{
+    margin: 0;
+  }
+
+}
+
+
+@media only screen and (max-width:620px){
   .home-container{
     justify-content:center;
   }
@@ -308,6 +412,10 @@ header{
   }
 
   .base64-decode-button-container{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
     margin-bottom: -0.5rem;
   }
 
