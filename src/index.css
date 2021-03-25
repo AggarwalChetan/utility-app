@@ -321,6 +321,17 @@ header{
     margin-top: 0;
   }
 
+  .base64-decode{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .base64-decode textarea{
+    height: 230px;
+    width: 230px;
+    margin-top: 0;
+  }
+
 }
 
 @media only screen and (max-width:780px){
