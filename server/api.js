@@ -61,7 +61,12 @@ router.post('/sha-512', (req, res) => {
 
 //json-beautify
 router.post('/json', (req, res) => {
-    res.send(JSON.stringify(req.body, null, '\t'));
+
+    // converts object to string
+    const data = JSON.stringify(req.body, null, '\t');
+
+    // convert string back to object
+    res.send(data);
 });
 
 module.exports = router;
