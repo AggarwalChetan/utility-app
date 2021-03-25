@@ -23,10 +23,10 @@ class App extends React.Component{
           <Utility utilityApp = "EDecoder" app="Encoders / Decoders"/>
           <Utility utilityApp = "HashGenerator" app="Hash Generators"/>
           <Utility utilityApp = "RHConverter" app="RGB / HEX Converters"/>
-          <Utility utilityApp = "TConverter" app="Timestamp Converters"/>
           <Utility utilityApp = "UConverter" app="Unit Converters"/>
           <Utility utilityApp = "NBConverter" app="Number Base Converters"/>
-          <Utility utilityApp = "SUtilities" app="String Utilities"/>
+          <Utility utilityApp = "SWatch" app="Stopwatch"/>
+          <Utility utilityApp = "Timer" app="Timer"/>
           <Utility utilityApp = "JValidator" app="JSON Beautify"/>
         </div>
       </>

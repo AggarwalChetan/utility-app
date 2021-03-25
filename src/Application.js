@@ -29,10 +29,10 @@ function Application(){
                 <Route exact path = '/HashGenerator/SHA-256' component={SHA256}/>
                 <Route exact path = '/HashGenerator/SHA-512' component={SHA512}/>
                 <Route exact path = '/RHConverter' component={RHCApp}/>
-                <Route exact path = '/TConverter' component={TCApp}/>
+                <Route exact path = '/"SWatch"' component={TCApp}/>
                 <Route exact path = '/UConverter' component={UCApp}/>
                 <Route exact path = '/NBConverter' component={NBCApp}/>
-                <Route exact path = '/SUtilities' component={SUApp}/>
+                <Route exact path = '/Timer' component={SUApp}/>
                 <Route exact path = '/JValidator' component={JVApp}/>
             </Switch>
         </Router>
