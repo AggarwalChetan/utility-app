@@ -367,8 +367,8 @@ header{
   }
 
   .base64-decode textarea{
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
     margin-top: 0;
   }
 
@@ -378,8 +378,8 @@ header{
   }
 
   .json textarea{
-    height: 220px;
-    width: 220px;
+    height: 200px;
+    width: 200px;
     margin-top: 0;
   }
 
@@ -398,7 +398,7 @@ header{
 }
 
 
-@media only screen and (max-width:620px){
+@media only screen and (max-width:615px){
   .home-container{
     justify-content:center;
   }
