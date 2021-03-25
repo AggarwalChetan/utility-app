@@ -295,6 +295,20 @@ header{
   border-radius: 5px;
 }
 
+@media only screen and (max-width:1040px){
+  .json{
+    height: 650px;
+    margin-top: 1rem;
+  }
+
+  .json textarea{
+    height: 300px;
+    width: 300px;
+    margin-top: 0;
+  }
+
+}
+
 @media only screen and (max-width:880px){
   .home-container{
     justify-content:center;
