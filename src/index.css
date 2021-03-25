@@ -310,43 +310,6 @@ header{
 }
 
 @media only screen and (max-width:880px){
-  .home-container{
-    justify-content:center;
-  }
-  
-  .UApp-container{
-    justify-content: center;
-  }
-
-  .UAppOverview-content {
-    font-size: 13.5px;
-  }
-
-  .modal-container {
-    max-width: 400px;
-    min-height: 450px;
-  }
-  
-  .drop-down{
-    width: 40%;
-    font-size: 9.5px;
-  }
-
-  .closebutton {
-    font-size: 22px;
-  }
-
-  .base64-decode{
-    height: 650px;
-    margin-top: 1rem;
-  }
-
-  .base64-decode textarea{
-    height: 300px;
-    width: 300px;
-    margin-top: 0;
-  }
-
   .json{
     height: 650px;
     margin-top: 1rem;
@@ -356,19 +319,6 @@ header{
     height: 300px;
     width: 300px;
     margin-top: 0;
-  }
-
-
-  .base64-decode-button-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 30px;
-    margin-bottom: -0.5rem;
-  }
-
-  .base64-decode-button-container button{
-    margin: 0;
   }
 
 }
@@ -470,8 +420,8 @@ header{
   }
 
   .base64-decode textarea{
-    height: 250px;
-    width: 250px;
+    height: 240px;
+    width: 240px;
     margin-top: 0;
   }
 
@@ -481,8 +431,8 @@ header{
   }
 
   .json textarea{
-    height: 250px;
-    width: 250px;
+    height: 260px;
+    width: 260px;
     margin-top: 0;
   }
 
