@@ -48,7 +48,7 @@ class EncoderDecoder extends React.Component {
                     <button className="home-button" onClick={this.homePage}>Home</button>
                 </header>
                 <div className="base64-decode">
-                    <textarea name ="inputStr" onChange={this.handleURLChange} placeholder="Enter the text you want to decode..."></textarea>
+                    <textarea name ="inputStr" value={this.state.inputStr} onChange={this.handleURLChange} placeholder="Enter the text you want to decode..."></textarea>
                     <div className="base64-decode-button-container">
                         <button onClick={this.encodeURL}>Encode url</button>
                         <button onClick={() => this.setState({ outputStr: '', inputStr: '' })}>Reset</button>

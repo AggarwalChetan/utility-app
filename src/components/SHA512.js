@@ -1,12 +1,30 @@
 import React from 'react';
 
-class SHA512 extends React.Component {
+class SHA1 extends React.Component {
     constructor(props) {
         super(props);
+        this.state = { inputStr: '', outputStr: '' };
     }
 
     homePage = () => {
         window.location = '/';
+    }
+
+    sha512 = () => {
+        fetch('/api/sha-1/', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({ str: `${this.state.inputStr}` })
+        })
+            .then(resp => resp.json())
+            .then(resp => this.setState({ outputStr: `${resp.str}` }))
+    }
+
+    handleSha512 = (event) => {
+        this.setState({ [event.target.name]: event.target.value })
     }
 
     render() {
@@ -16,16 +34,16 @@ class SHA512 extends React.Component {
                     <button className="home-button" onClick={this.homePage}>Home</button>
                 </header>
                 <div className="base64-decode">
-                    <textarea placeholder="Enter the text you want to decode..."></textarea>
+                    <textarea name="inputStr" value={this.state.inputStr} onChange={this.handleSha512} placeholder="Enter the input..."></textarea>
                     <div className="base64-decode-button-container">
-                        <button>SHA-512</button>
-                        <button>Reset</button>
+                        <button onClick={this.sha512}>SHA-512</button>
+                        <button onClick={() => this.setState({ outputStr: '', inputStr: '' })}>Reset</button>
                     </div>
-                    <textarea placeholder="Your result will appear here..."></textarea>
+                    <textarea value={this.state.outputStr} placeholder="Your result will appear here..."></textarea>
                 </div>
             </>
         )
     }
 }
 
-export default SHA512;
+export default SHA1;

@@ -27,7 +27,7 @@ class App extends React.Component{
           <Utility utilityApp = "UConverter" app="Unit Converters"/>
           <Utility utilityApp = "NBConverter" app="Number Base Converters"/>
           <Utility utilityApp = "SUtilities" app="String Utilities"/>
-          <Utility utilityApp = "JValidator" app="JSON Validator"/>
+          <Utility utilityApp = "JValidator" app="JSON Beautify"/>
         </div>
       </>
     )

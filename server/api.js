@@ -5,6 +5,7 @@ const sha1 = require('js-sha1');
 const { sha256 } = require('js-sha256');
 const { sha512 } = require('js-sha512');
 const router = express.Router();
+const beautify = require('json-beautify');
 
 router.use(express.json());
 
@@ -37,30 +38,30 @@ router.post('/base64-decode', (req, res) => {
 //md5
 router.post('/md5', (req, res) => {
     const data = req.body.str;
-    res.send(md5(data));
+    res.send({str : md5(data)});
 })
 
 //sha-1
 router.post('/sha-1', (req, res) => {
     const data = req.body.str;
-    res.send(sha1(data));
+    res.send({str : sha1(data)});
 })
 
 //sha-256
 router.post('/sha-256', (req, res) => {
     const data = req.body.str;
-    res.send(sha256(data));
+    res.send({str : sha256(data)});
 })
 
 //sha-512
 router.post('/sha-512', (req, res) => {
     const data = req.body.str;
-    res.send(sha512(data));
+    res.send({str : sha512(data)});
 })
 
-//base64-encode
+//json-beautify
 router.post('/json', (req, res) => {
-    res.send(JSON.stringify(req.body, null, "\t"));
+    res.send(JSON.stringify(req.body, null, '\t'));
 });
 
 module.exports = router;
