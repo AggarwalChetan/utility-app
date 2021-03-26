@@ -547,4 +547,14 @@ header{
     margin: 5px;
   }
 
+  .home-button{
+    font-size: 1.4rem;
+  }
+  
+  .utility-header{ 
+    color: #000000;
+    font-size: 1.8rem;
+    font-family:cursive;
+  }
+
 }
