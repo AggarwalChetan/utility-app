@@ -3,37 +3,37 @@ import React from 'react';
 class EncoderDecoder extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {inputStr : '', outputStr : ''};
+        this.state = { inputStr: '', outputStr: '' };
     }
 
     handleURLChange = (event) => {
-        this.setState({[event.target.name] : event.target.value});
+        this.setState({ [event.target.name]: event.target.value });
     }
 
     encodeURL = () => {
         fetch('/api/encode-url/', {
-            method : "POST",
-            headers : {
+            method: "POST",
+            headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body : JSON.stringify({str : `${this.state.inputStr}`})
+            body: JSON.stringify({ str: `${this.state.inputStr}` })
         })
-        .then(resp => resp.json())
-        .then(resp => this.setState({outputStr : `${resp.str}`}))
+            .then(resp => resp.json())
+            .then(resp => this.setState({ outputStr: `${resp.str}` }))
     }
 
     decodeURL = () => {
         fetch('/api/decode-url/', {
-            method : "POST",
-            headers : {
+            method: "POST",
+            headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body : JSON.stringify({str : `${this.state.inputStr}`})
+            body: JSON.stringify({ str: `${this.state.inputStr}` })
         })
-        .then(resp => resp.json())
-        .then(resp => this.setState({outputStr : `${resp.str}`}))
+            .then(resp => resp.json())
+            .then(resp => this.setState({ outputStr: `${resp.str}` }))
     }
 
 
@@ -46,9 +46,11 @@ class EncoderDecoder extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
+
                 <div className="base64-decode">
-                    <textarea name ="inputStr" value={this.state.inputStr} onChange={this.handleURLChange} placeholder="Enter the text you want to decode..."></textarea>
+                    <textarea name="inputStr" value={this.state.inputStr} onChange={this.handleURLChange} placeholder="Enter the text you want to decode..."></textarea>
                     <div className="base64-decode-button-container">
                         <button onClick={this.encodeURL}>Encode url</button>
                         <button onClick={() => this.setState({ outputStr: '', inputStr: '' })}>Reset</button>

@@ -1,23 +1,25 @@
 import React from 'react';
 
-class RHCApp extends React.Component{
-    constructor(props){
+class RHCApp extends React.Component {
+    constructor(props) {
         super(props);
     }
 
     homePage = () => {
-        window.location='/';
+        window.location = '/';
     }
-    
-    render(){
+
+    render() {
         return (
             <>
-            <header>
-                <button className="home-button" onClick={this.homePage}>Home</button>
-            </header>
+                <header>
+                    <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
+                </header>
+
             </>
         )
     }
 }
 
-export default RHCApp; 
+export default RHCApp;

@@ -16,15 +16,15 @@ class JVApp extends React.Component {
 
     beautify = () => {
         fetch('/api/json/', {
-            method : "POST",
-            headers : {
+            method: "POST",
+            headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body : `${this.state.inputStr}`
+            body: `${this.state.inputStr}`
         })
-        .then(resp => resp.text())
-        .then(resp => {this.setState({outputStr : resp})})
+            .then(resp => resp.text())
+            .then(resp => { this.setState({ outputStr: resp }) })
     }
 
 
@@ -33,12 +33,14 @@ class JVApp extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
+
                 <div className="json">
                     <textarea name="inputStr" value={this.state.inputStr} placeholder="Enter the text you want to decode..." onChange={this.handleJSON}></textarea>
                     <div className="base64-decode-button-container">
                         <button onClick={this.beautify}>Beautify</button>
-                        <button onClick={() => this.setState({ outputStr: '' , inputStr: '' })}>Reset</button>
+                        <button onClick={() => this.setState({ outputStr: '', inputStr: '' })}>Reset</button>
                     </div>
                     <textarea name="outputStr" value={this.state.outputStr} placeholder="Your result will appear here..."></textarea>
                 </div>

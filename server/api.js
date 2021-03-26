@@ -65,8 +65,17 @@ router.post('/json', (req, res) => {
     // converts object to string
     const data = JSON.stringify(req.body, null, 3);
 
-    // convert string back to object
     res.send(data);
 });
+
+router.post('/bto', (req, res) => {
+
+    const data = parseInt(req.body.str, 8);
+
+    res.send(JSON.stringify({obj : data}));
+});
+
+
+
 
 module.exports = router;

@@ -30,7 +30,9 @@ class HGApp extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
+
 
                 <div className="ED-UApp-container">
                     <div onClick={this.redirectToMD5} className="UApp">
@@ -71,7 +73,7 @@ class HGApp extends React.Component {
                     </div>
                     <div className="UAppOverview">
                         <div className="UAppOverview-content">
-                            <li>The SHA-512 is a patented cryptographic hash function that outputs a value that is 512 bits long. 
+                            <li>The SHA-512 is a patented cryptographic hash function that outputs a value that is 512 bits long.
                                 SHA-512 is much more secure than SHA-256 and take more time to crack.</li>
                         </div>
                     </div>

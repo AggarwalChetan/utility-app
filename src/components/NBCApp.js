@@ -29,21 +29,22 @@ class NBCApp extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
 
                 <div className="home-container">
-                    <BTDModal/>
-                    <BTHModal/>
-                    <BTOModal/>
-                    <DTBModal/>
-                    <DTHModal/>
-                    <DTOModal/>
-                    <HTBModal/>
-                    <HTDModal/>
-                    <HTOModal/>
-                    <OTBModal/>
-                    <OTDModal/>
-                    <OTHModal/>
+                    <BTDModal />
+                    <BTHModal />
+                    <BTOModal />
+                    <DTBModal />
+                    <DTHModal />
+                    <DTOModal />
+                    <HTBModal />
+                    <HTDModal />
+                    <HTOModal />
+                    <OTBModal />
+                    <OTDModal />
+                    <OTHModal />
                 </div>
 
             </>

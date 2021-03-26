@@ -21,10 +21,10 @@ class Base64Encode extends React.Component {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify({"str" : `${this.state.inputStr}`})
+            body: JSON.stringify({ "str": `${this.state.inputStr}` })
         })
-        .then(resp => resp.json())
-        .then(resp => this.setState({outputStr : `${resp.str}`}));
+            .then(resp => resp.json())
+            .then(resp => this.setState({ outputStr: `${resp.str}` }));
     }
 
     decodeApi = () => {
@@ -34,10 +34,10 @@ class Base64Encode extends React.Component {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
-            body: JSON.stringify({"str" : `${this.state.inputStr}`})
+            body: JSON.stringify({ "str": `${this.state.inputStr}` })
         })
-        .then(resp => resp.json())
-        .then(resp => this.setState({outputStr : `${resp.str}`}));
+            .then(resp => resp.json())
+            .then(resp => this.setState({ outputStr: `${resp.str}` }));
     }
 
 
@@ -48,7 +48,9 @@ class Base64Encode extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
+
                 <div className="base64-decode">
                     <textarea name="inputStr" value={this.state.inputStr} placeholder="Enter the text you want to decode..." onChange={this.handleBase64Encoder}></textarea>
                     <div className="base64-decode-button-container">

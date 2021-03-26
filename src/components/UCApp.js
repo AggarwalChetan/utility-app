@@ -23,17 +23,18 @@ class UCApp extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
 
                 <div className="home-container">
-                    <LengthModal/>
-                    <AreaModal/>
-                    <VolumeModal/>
-                    <WeightModal/>
-                    <SpeedModal/>
-                    <RotationModal/>
-                    <TemperatureModal/>
-                    <PressureModal/>
+                    <LengthModal />
+                    <AreaModal />
+                    <VolumeModal />
+                    <WeightModal />
+                    <SpeedModal />
+                    <RotationModal />
+                    <TemperatureModal />
+                    <PressureModal />
                 </div>
 
             </>

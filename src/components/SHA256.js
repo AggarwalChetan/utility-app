@@ -32,7 +32,9 @@ class SHA1 extends React.Component {
             <>
                 <header>
                     <button className="home-button" onClick={this.homePage}>Home</button>
+                    <div className="utility-header">Utility Apps</div>
                 </header>
+
                 <div className="base64-decode">
                     <textarea name="inputStr" value={this.state.inputStr} onChange={this.handleSha256} placeholder="Enter the input..."></textarea>
                     <div className="base64-decode-button-container">
