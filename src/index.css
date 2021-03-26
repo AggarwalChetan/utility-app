@@ -542,7 +542,7 @@ header{
   }
 
   .base64-decode-button-container button{
-    margin: 0;
+    margin: 5px;
   }
 
 }
