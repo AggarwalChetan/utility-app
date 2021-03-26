@@ -382,6 +382,46 @@ header{
   font-weight: bold;
 }
 
+.stopwatch-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopwatch{
+  font-size: 6rem;
+  color: #000000;
+}
+
+.stopwatch-button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 30px;
+  margin-bottom: 1.5rem;
+}
+
+.stopwatch-button-container button{
+  height: 40px;
+  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  background-color: #226089;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 3px solid  #000000;
+  cursor: pointer;
+  color: #5accf5;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 @media only screen and (max-width:1040px){
   .json{
     height: 650px;
@@ -555,6 +595,11 @@ header{
     padding: 0;
     font-size: 1.8rem;
     font-family:cursive;
+  }
+
+  .stopwatch{
+    font-size: 4rem;
+    color: #000000;
   }
 
 }
