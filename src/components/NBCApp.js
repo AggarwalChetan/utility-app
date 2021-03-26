@@ -1,63 +1,54 @@
 import React from 'react';
+import BTDModal from './BTDModal';
+import BTHModal from './BTHModal';
+import BTOModal from './BTOModal';
 
-class NBCApp extends React.Component{
-    constructor(props){
+import DTBModal from './DTBModal';
+import DTHModal from './DTHModal';
+import DTOModal from './DTOModal';
+
+import HTBModal from './HTBModal';
+import HTDModal from './HTDModal';
+import HTOModal from './HTOModal';
+
+import OTBModal from './OTBModal';
+import OTHModal from './OTHModal';
+import OTDModal from './OTDModal';
+
+class NBCApp extends React.Component {
+    constructor(props) {
         super(props);
     }
 
     homePage = () => {
-        window.location='/';
+        window.location = '/';
     }
 
-    render(){
+    render() {
         return (
             <>
-            <header>
-                <button className="home-button" onClick={this.homePage}>Home</button>
-            </header>
+                <header>
+                    <button className="home-button" onClick={this.homePage}>Home</button>
+                </header>
 
-            <div className="home-container">
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Binary To<br/> Decimal</div>
+                <div className="home-container">
+                    <BTDModal/>
+                    <BTHModal/>
+                    <BTOModal/>
+                    <DTBModal/>
+                    <DTHModal/>
+                    <DTOModal/>
+                    <HTBModal/>
+                    <HTDModal/>
+                    <HTOModal/>
+                    <OTBModal/>
+                    <OTDModal/>
+                    <OTHModal/>
                 </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Binary To<br/> Hex</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Binary To<br/> Octal</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Decimal To<br/> Binary</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Decimal To<br/> Hex</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Decimal To<br/> Octal</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Hex To<br/> Binary</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Hex To<br/> Decimal</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Hex To<br/> Octal</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Octal To<br/> Binary</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Octal To<br/> Decimal</div>
-                </div>
-                <div className="Utility-app">
-                    <div className="Utiliy-content">Octal To<br/> Hex</div>
-                </div>
-            </div>
 
             </>
         )
     }
 }
 
-export default NBCApp; 
+export default NBCApp;

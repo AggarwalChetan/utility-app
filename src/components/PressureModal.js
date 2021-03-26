@@ -17,8 +17,10 @@ class PressureModal extends React.Component {
 
     render() {
         return (
-            <div className="Utility-app">
-                <div onClick={this.handleModalOpen} className="Utiliy-content">Pressure Converter</div>
+            <>
+                <div onClick={this.handleModalOpen} className="Utility-app">
+                    <div className="Utiliy-content">Pressure Converter</div>
+                </div>
                 <Modal className="modal" isOpen={this.state.modalOpen}>
                     <div className="modal-container">
                         <div className="drop-down-container">
@@ -48,7 +50,8 @@ class PressureModal extends React.Component {
                         </div>
                     </div>
                 </Modal>
-            </div>
+            </>
+
         )
     }
 

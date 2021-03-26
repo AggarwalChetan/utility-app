@@ -187,6 +187,81 @@ header{
   color: white;
 }
 
+.NBC-button{
+  background-color: #373b69;
+  border: none;
+  cursor: pointer;
+  font-size: 27px;
+  color: #12142c;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* .NBC-button:hover{
+  color: yellow;
+} */
+
+/* .NBC-button:focus{
+  outline: 0;
+} */
+
+.NBC-modal-container {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+  background-color: #373b69;
+}
+
+.NBC-modal-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  letter-spacing: 1px;
+}
+
+.NBC-button-container{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.NBC-closebutton {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 27px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 30px;
+  background-color: #373b69;
+  color: #12142c;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.NBC-closebutton:focus {
+  outline: 0;
+}
+
+.NBC-closebutton:hover {
+  color: white;
+}
+
 .drop-down-container{
   display: flex;
   justify-content: space-around;
