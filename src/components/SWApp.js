@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SUApp extends React.Component {
+class SWApp extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -22,4 +22,4 @@ class SUApp extends React.Component {
     }
 }
 
-export default SUApp;
+export default SWApp;

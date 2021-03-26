@@ -11,8 +11,8 @@ import RHCApp from './components/RHCApp';
 import SHA1 from './components/SHA1';
 import SHA256 from './components/SHA256';
 import SHA512 from './components/SHA512';
-import SUApp from './components/SUApp';
-import TCApp from './components/TCApp';
+import TApp from './components/TApp';
+import SWApp from './components/SWApp';
 import UCApp from './components/UCApp';
 
 function Application(){
@@ -29,10 +29,10 @@ function Application(){
                 <Route exact path = '/HashGenerator/SHA-256' component={SHA256}/>
                 <Route exact path = '/HashGenerator/SHA-512' component={SHA512}/>
                 <Route exact path = '/RHConverter' component={RHCApp}/>
-                <Route exact path = '/"SWatch"' component={TCApp}/>
+                <Route exact path = '/SWatch' component={SWApp}/>
                 <Route exact path = '/UConverter' component={UCApp}/>
                 <Route exact path = '/NBConverter' component={NBCApp}/>
-                <Route exact path = '/Timer' component={SUApp}/>
+                <Route exact path = '/Timer' component={TApp}/>
                 <Route exact path = '/JValidator' component={JVApp}/>
             </Switch>
         </Router>

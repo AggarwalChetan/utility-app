@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TCApp extends React.Component {
+class TApp extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -22,4 +22,4 @@ class TCApp extends React.Component {
     }
 }
 
-export default TCApp;
+export default TApp;
