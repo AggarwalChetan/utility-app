@@ -16,6 +16,7 @@ class RHCApp extends React.Component {
                     <button className="home-button" onClick={this.homePage}>Home</button>
                     <div className="utility-header">Utility Apps</div>
                 </header>
+                <div>Coming Soon...</div>
 
             </>
         )

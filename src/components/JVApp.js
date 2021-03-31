@@ -37,7 +37,7 @@ class JVApp extends React.Component {
                 </header>
 
                 <div className="json">
-                    <textarea name="inputStr" value={this.state.inputStr} placeholder="Enter the text you want to decode..." onChange={this.handleJSON}></textarea>
+                    <textarea name="inputStr" value={this.state.inputStr} placeholder="Enter the input..." onChange={this.handleJSON}></textarea>
                     <div className="base64-decode-button-container">
                         <button onClick={this.beautify}>Beautify</button>
                         <button onClick={() => this.setState({ outputStr: '', inputStr: '' })}>Reset</button>
